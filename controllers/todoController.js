@@ -46,7 +46,7 @@ exports.updateTodo = async (req, res) => {
                 message: "Todo not found",
             });
         }
-        if(req.user.role !== 'admin' && req.user._id.toString() !== todo.createdBy) {
+        if(req.user._id.toString() !== todo.createdBy.toString()) {
             return res.status(403).json({
                 ok: false,
                 message: "Not authorized to update this todo",
