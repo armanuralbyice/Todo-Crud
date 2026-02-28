@@ -1,0 +1,15 @@
+Project Name: Todo Crud
+
+Tech Stack:
+Backend: Node.js, Express.js, MongoDB, Mongoose
+Authentication: JWT + HTTP-only Cookies
+File Uploads: Multer (CV upload)
+
+Project Description:
+এই project-এ দুটি main user role আছে:
+Admin – All user todo view.
+User – user there todo can be post get put delete.
+
+Project এর মূল feature:
+Admin login/logout, CRUD for Todo
+Secure authentication with JWT cookies
